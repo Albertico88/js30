@@ -101,7 +101,7 @@ body {
   width: 50%;
   background: white;
   flex: 0;
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 
 /* unholy css to style input type="range" */
@@ -128,7 +128,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 15px;
   width: 15px;
   border-radius: 50px;
-  background: #8e0e00;
+  background: #992012;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -3.5px;

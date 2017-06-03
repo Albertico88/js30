@@ -47,7 +47,6 @@ function scrub(e) {
 }
 
 
-
 // Hook up Event Listeners
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
@@ -64,11 +63,6 @@ ranges.forEach(range => range.addEventListener('mousemove', rangeUpdate));
 
 let mousedown = false; // flag
 progress.addEventListener('click', scrub);
-progress.addEventListener('mousemove', function() {
-  if (mousedown) {
-    scrub();
-  }
-});
-
+progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
