@@ -46,3 +46,4 @@ getVideo();
 
 
 video.addEventListener('canplay', paintToCanvas);
+window.addEventListener('keydown', takePhoto);
