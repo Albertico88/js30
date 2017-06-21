@@ -8,11 +8,11 @@ html {
 
 html {
   font-size: 10px;
-  background:#ffc600;
+  background:#e66934;
 }
 
 .photobooth {
-  background:white;
+  background:#e66934;
   max-width:150rem;
   margin: 2rem auto;
   border-radius:2px;
@@ -31,10 +31,10 @@ html {
 }
 
 .player {
-  position: absolute;
-  top:20px;
+  position: fixed;
+  top: 10px;
   right: 20px;
-  width:200px;
+  width: 200px;
 }
 
 /*
